@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBECDB"
+    tools:context=".Second_activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="585px"
+            android:layout_height="155px"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#EE4F35"
+            android:onClick="CloseApp"
+            android:text="Выход"
+            android:textColor="#FBECDB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLaw"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="DuplicateClickableBoundsCheck,HardcodedText,InvalidId,MissingConstraints,PxUsage,TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="261dp"
+            android:layout_height="240dp"
+
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/igra_baramelka_barabashka_2_0"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="585px"
+            android:layout_height="155px"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#EE4F35"
+            android:onClick="StartGame"
+            android:text="Cтарт"
+            android:textColor="#FBECDB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="HardcodedText,MissingConstraints,PxUsage,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/buttonLaw"
+            android:layout_width="222dp"
+            android:layout_height="155px"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#EE4F35"
+            android:onClick="Law"
+            android:shadowColor="#FFFFFF"
+            android:text="Правила"
+            android:textColor="#FBECDB"
+            android:textColorLink="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStart"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,InvalidId,MissingConstraints,PxUsage,TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
